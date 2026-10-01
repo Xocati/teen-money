@@ -5,41 +5,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Удалённый заработок для подростков</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #f5f5f5;
-      color: #222;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: #f0f4f8;
+      color: #1a1a1a;
+      line-height: 1.6;
     }
-    h1 { color: #1a73e8; }
+    header {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header p {
+      font-size: 1.1em;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto 25px;
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #4f46e5;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s;
+    }
+    .btn:hover { transform: scale(1.05); }
+    main {
+      max-width: 800px;
+      margin: -40px auto 0;
+      padding: 0 20px 60px;
+    }
+    h2 {
+      font-size: 1.6em;
+      margin: 40px 0 20px;
+      color: #1e293b;
+    }
     .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      margin: 15px 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border-left: 4px solid #7c3aed;
+    }
+    .card h3 {
+      color: #4f46e5;
+      margin-bottom: 8px;
+      font-size: 1.2em;
+    }
+    .warning {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+    .warning h3 { color: #b45309; margin-bottom: 10px; }
+    .warning ul { padding-left: 20px; }
+    .warning li { margin: 6px 0; }
+    .platforms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .platform {
       background: #fff;
       padding: 20px;
       border-radius: 12px;
-      margin: 15px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
+    .platform strong { color: #4f46e5; display: block; margin-bottom: 5px; }
+    footer {
+      background: #1e293b;
+      color: #cbd5e1;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    footer a { color: #a5b4fc; text-decoration: none; }
   </style>
 </head>
 <body>
-  <h1>Как подростку заработать удалённо</h1>
-  <p>Честные способы, проверенные площадки и советы без воды.</p>
 
-  <div class="card">
-    <h2>1. Тексты и контент</h2>
-    <p>Ведение соцсетей, написание постов, помощь блогерам.</p>
-  </div>
+  <header>
+    <h1>Как подростку заработать удалённо</h1>
+    <p>Честные способы, проверенные площадки и советы без воды — от того, кто сам через это прошёл.</p>
+    <a href="#platforms" class="btn">Где искать заказы →</a>
+  </header>
 
-  <div class="card">
-    <h2>2. Видео и Shorts</h2>
-    <p>Монтаж Reels, TikTok, YouTube Shorts — спрос огромный.</p>
-  </div>
+  <main>
+    <h2>Способы заработка</h2>
 
-  <div class="card">
-    <h2>3. Помощь с ИИ</h2>
-    <p>Оптимизация промптов, проверка ответов чат-ботов.</p>
-  </div>
+    <div class="card">
+      <h3>1. Тексты и контент</h3>
+      <p>Ведение соцсетей, написание постов, помощь блогерам. Старт без опыта — от 500 ₽ за пост.</p>
+    </div>
+
+    <div class="card">
+      <h3>2. Видео и Shorts</h3>
+      <p>Монтаж Reels, TikTok, YouTube Shorts — спрос огромный. Достаточно телефона и бесплатного CapCut.</p>
+    </div>
+
+    <div class="card">
+      <h3>3. Помощь с ИИ</h3>
+      <p>Оптимизация промптов, проверка ответов чат-ботов, разметка данных. Оплата от 200 ₽/час.</p>
+    </div>
+
+    <h2 id="platforms">Где искать заказы</h2>
+    <div class="platforms">
+      <div class="platform">
+        <strong>Kwork</strong>
+        Простые задачи для новичков, регистрация с 14 лет.
+      </div>
+      <div class="platform">
+        <strong>FL.ru</strong>
+        Крупная биржа, много заказов на тексты и дизайн.
+      </div>
+      <div class="platform">
+        <strong>Telegram-каналы</strong>
+        Ищи «вакансии копирайтинг», «удалёнка для подростков».
+      </div>
+      <div class="platform">
+        <strong>YouTube Shorts / TikTok</strong>
+        Можно монетизировать свой контент без вложений.
+      </div>
+    </div>
+
+    <div class="warning">
+      <h3>⚠️ Как не попасть на развод</h3>
+      <ul>
+        <li>Никогда не плати за «обучение» или «доступ к заказам» вперёд.</li>
+        <li>Не переходи по ссылкам с обещаниями «10 000 ₽ за час».</li>
+        <li>Первые заказы бери только через биржи с защитой сделки.</li>
+        <li>Не отправляй паспортные данные и коды из SMS.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Удалённый заработок для подростков</p>
+    <p>Подпишись на Telegram-канал: <a href="#">@твой_канал</a></p>
+  </footer>
+
 </body>
 </html>
