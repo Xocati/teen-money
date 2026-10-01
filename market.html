@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Биржа услуг для подростков</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: #f0f4f8;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8em; margin-bottom: 10px; }
+    header p { opacity: 0.9; max-width: 600px; margin: 0 auto; }
+    .nav {
+      background: #fff;
+      padding: 12px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .nav a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 12px;
+    }
+    .nav a:hover { text-decoration: underline; }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+    .intro {
+      background: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    .intro h2 { color: #4f46e5; margin-bottom: 10px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border-top: 4px solid #7c3aed;
+    }
+    .card h3 { color: #1e293b; margin-bottom: 8px; font-size: 1.1em; }
+    .card .price {
+      color: #4f46e5;
+      font-weight: 700;
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .card .author { color: #64748b; font-size: 0.9em; margin-bottom: 15px; }
+    .card .btn {
+      display: inline-block;
+      background: #4f46e5;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9em;
+    }
+    .card .btn:hover { background: #4338ca; }
+    .add {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .add h3 { color: #b45309; margin-bottom: 10px; }
+    .add a {
+      display: inline-block;
+      background: #f59e0b;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Биржа услуг для подростков</h1>
+    <p>Здесь ты можешь найти исполнителя или предложить свою услугу</p>
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">← На главную</a>
+    <a href="market.html">Биржа услуг</a>
+  </nav>
+
+  <main>
+    <div class="intro">
+      <h2>Как это работает</h2>
+      <p>1. Смотри карточки услуг ниже.<br>
+         2. Нажми «Связаться» — откроется Telegram исполнителя.<br>
+         3. Договоритесь о цене и сроках напрямую.<br>
+         <strong>Хочешь добавить свою услугу?</strong> Нажми кнопку внизу страницы.</p>
+    </div>
+
+    <h2 style="margin-bottom: 20px; color: #1e293b;">Услуги</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Монтаж коротких видео</h3>
+        <p class="author">Аня, 16 лет</p>
+        <p>Сделаю Reels/TikTok из твоих видео. CapCut, быстрые переходы, музыка.</p>
+        <p class="price">от 500 ₽</p>
+        <a href="https://t.me/твой_ник" class="btn">Связаться</a>
+      </div>
+
+      <div class="card">
+        <h3>Посты для Telegram</h3>
+        <p class="author">Максим, 17 лет</p>
+        <p>Напишу 3 поста для твоего канала. С картинками в Canva.</p>
+        <p class="price">от 400 ₽</p>
+        <a href="https://t.me/твой_ник" class="btn">Связаться</a>
+      </div>
+
+      <div class="card">
+        <h3>Оформление презентаций</h3>
+        <p class="author">Лиза, 15 лет</p>
+        <p>Сделаю красивую презентацию в PowerPoint или Canva. До 15 слайдов.</p>
+        <p class="price">от 700 ₽</p>
+        <a href="https://t.me/твой_ник" class="btn">Связаться</a>
+      </div>
+    </div>
+
+    <div class="add">
+      <h3>Хочешь добавить свою услугу?</h3>
+      <p>Заполни короткую форму — я размещу твою карточку на сайте.</p>
+      <a href="https://forms.google.com/ТВОЯ_ССЫЛКА" target="_blank">Добавить услугу</a>
+    </div>
+  </main>
+
+</body>
+</html>
